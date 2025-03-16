@@ -94,7 +94,7 @@ app.get('/schedule', (req, res) => {
           time: '09:00 - 10:00', 
           title: 'Omvisning på Tøyen bibliotek', 
           location: 'Deichman Tøyen',
-          description: 'Bli med på en guidet omvisning av det innovative Tøyen bibliotek, inkludert Biblo Tøyen – et unikt bibliotek designet for barn og unge mellom 10 og 15 år.'
+          description: 'Bli med på en guidet omvisning av Tøyen bibliotek, inkludert Biblo Tøyen – et bibliotek designet for barn og unge mellom 10 og 15 år.'
         },
         { 
           time: '10:00 - 11:00', 
@@ -105,13 +105,13 @@ app.get('/schedule', (req, res) => {
         { 
           time: '11:00 - 12:00', 
           title: 'Lunsj', 
-          location: 'Café Centropa',
-          description: 'Velsmakende lunsj med mulighet for å møte andre deltakere og utveksle erfaringer før programmet starter.'
+          location: 'Vrimle',
+          description: 'Lunsj med mulighet for å møte andre deltakere og utveksle erfaringer før programmet starter.'
         },
         { 
           time: '12:00 - 12:15', 
           title: 'Velkommen', 
-          speaker: 'Merete Lie', 
+          speaker: 'Annike Selmer', 
           location: 'Deichman Bjørvika',
           description: 'Offisiell åpning av Cicero brukerforum 2025 med introduksjon til programmet og praktisk informasjon for de to dagene.'
         },
@@ -119,7 +119,7 @@ app.get('/schedule', (req, res) => {
           time: '12:15 - 13:15', 
           title: 'Cicero-nettverk Norge', 
           location: 'Deichman Bjørvika',
-          description: 'Presentasjon av status for Cicero-nettverket i Norge og diskusjon om fremtidig samarbeid mellom norske Cicero-bibliotek.'
+          description: 'Presentasjon av status for Cicero-nettverket i Norge og fremtidig samarbeid mellom norske Cicero-bibliotek.'
         },
         { 
           time: '13:30 - 15:00', 
@@ -133,7 +133,7 @@ app.get('/schedule', (req, res) => {
           title: 'Nasjonalt lånerregister og bibliotekkortet', 
           speaker: 'Inger Stenersen', 
           location: 'Deichman Bjørvika',
-          description: 'En gjennomgang av det nasjonale lånerregisteret og hvordan det integreres med Cicero, samt oppdatering om status for det nasjonale bibliotekkortet.'
+          description: 'En gjennomgang av det nasjonale lånerregisteret og bibliotekkortet.'
         },
         { 
           time: '15:30 - 15:45', 
@@ -145,13 +145,13 @@ app.get('/schedule', (req, res) => {
           time: '16:00 - 16:30', 
           title: 'Omvisning Deichman Bjørvika (for påmeldte)', 
           location: 'Deichman Bjørvika',
-          description: 'En eksklusiv omvisning av det prisbelønte hovedbiblioteket i Oslo, med fokus på arkitektur, teknologi og innovative bibliotekløsninger.'
+          description: 'En omvisning i hovedbiblioteket i Oslo.'
         },
         { 
           time: '19:00 - 21:00', 
           title: 'Middag (for påmeldte)', 
           location: 'Café Centropa',
-          description: 'Felles middag med god mat og drikke. En utmerket anledning til nettverksbygging og uformelle samtaler i hyggelige omgivelser.'
+          description: 'Felles middag med god mat og drikke.'
         }
       ]
     },
@@ -168,31 +168,31 @@ app.get('/schedule', (req, res) => {
           time: '09:15 - 10:00', 
           title: 'Tips og triks - folkebibliotek del 1', 
           location: 'Deichmansalen',
-          description: 'Praktiske tips og triks for optimal bruk av Cicero i folkebibliotek, inkludert katalogisering, utlån og arrangementsadministrasjon.'
+          description: 'Praktiske tips og triks for optimal bruk av Cicero i folkebibliotek.'
         },
         { 
           time: '09:15 - 10:00', 
           title: 'Tips og triks - skolebibliotek del 1', 
           location: 'Kinoen',
-          description: 'Parallellsesjon for skolebibliotek med fokus på klasseadministrasjon, tilpasset søk for elever og integrasjon med læringsplattformer.'
+          description: 'Parallellsesjon for skolebibliotek med fokus på bruk av Cicero.'
         },
         { 
           time: '10:15 - 11:00', 
           title: 'Tips og triks - folkebibliotek del 2', 
           location: 'Deichmansalen',
-          description: 'Fortsettelse av tips og triks for folkebibliotek, med fokus på rapportering, statistikk og brukeradministrasjon.'
+          description: 'Fortsettelse av tips og triks for folkebibliotek.'
         },
         { 
           time: '10:15 - 11:00', 
           title: 'Tips og triks - skolebibliotek del 2', 
           location: 'Kinoen',
-          description: 'Fortsettelse av parallellsesjon for skolebibliotek med fokus på statistikk og rapportering tilpasset skolebibliotekenes behov.'
+          description: 'Fortsettelse av parallellsesjon for skolebibliotek.'
         },
         { 
           time: '11:00 - 11:30', 
           title: 'Cicero-nettverk Norge', 
           location: 'Deichmansalen',
-          description: 'Diskusjon om videre organisering av Cicero-nettverket i Norge, inkludert forslag til struktur og samarbeidsformer.'
+          description: 'Diskusjon om videre organisering av Cicero-nettverket i Norge.'
         },
         { 
           time: '11:30 - 12:30', 
@@ -205,28 +205,28 @@ app.get('/schedule', (req, res) => {
           title: 'Felles formidlingsløsning', 
           speaker: 'Bjørn Kjetil Fredriksen', 
           location: 'Deichman Bjørvika',
-          description: 'Presentasjon av muligheter for en felles formidlingsløsning for Cicero-bibliotek, med demonstrasjon av prototype og diskusjon om videre utvikling.'
+          description: 'Presentasjon av arbeidet med en felles formidlingsløsning for norskek bibliotek.'
         },
         { 
           time: '13:00 - 13:45', 
           title: 'Nasjonal metadatabrønn', 
           speaker: 'Elise Conradi', 
           location: 'Deichman Bjørvika',
-          description: 'Gjennomgang av den nasjonale metadatabrønnen og dens integrasjon med Cicero, samt planer for fremtidige forbedringer.'
+          description: 'Gjennomgang av den kommende nasjonale metadatabrønnen.'
         },
         { 
           time: '14:00 - 14:30', 
           title: 'Systematic', 
           speaker: 'Helle Lauridsen', 
           location: 'Deichman Bjørvika',
-          description: 'Oppdatering fra Systematic om kommende funksjoner og mulighet for å stille spørsmål om fremtidige planer for Cicero.'
+          description: 'Oppdatering fra Systematic om kommende funksjoner.'
         },
         { 
           time: '14:30 - 15:00', 
           title: 'Avslutningsforedrag', 
           speaker: 'Liv Gulbrandsen', 
           location: 'Deichman Bjørvika',
-          description: 'Inspirerende avslutningsforedrag om bibliotekets rolle i samfunnet og viktigheten av gode biblioteksystemer for å møte fremtidens behov.'
+          description: 'Inspirerende avslutningsforedrag.'
         }
       ]
     }
