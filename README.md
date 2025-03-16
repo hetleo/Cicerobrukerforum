@@ -1,17 +1,15 @@
-# Conference Website
+# Cicero Brukerforum 2025 Website
 
-A simple, responsive conference website built with Express.js, EJS templates, and vanilla JavaScript.
-
-![Conference Website](https://via.placeholder.com/800x400?text=Conference+Website)
+A responsive conference website for the Cicero library system user forum event, built with Express.js, EJS templates, and vanilla JavaScript.
 
 ## Features
 
 - Responsive design that works on all devices
 - Information pages (Home, About, Speakers, Schedule, Contact)
 - Dynamic content rendering with EJS templates
-- Interactive schedule with tabbed navigation
-- Contact form with validation
+- Interactive schedule with tabbed navigation and expandable event details
 - Mobile-friendly navigation
+- Norwegian language interface
 
 ## Table of Contents
 
@@ -27,8 +25,8 @@ A simple, responsive conference website built with Express.js, EJS templates, an
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/conference-website.git
-   cd conference-website
+   git clone https://github.com/yourusername/cicero-brukerforum.git
+   cd cicero-brukerforum
    ```
 
 2. Install dependencies:
@@ -46,13 +44,16 @@ A simple, responsive conference website built with Express.js, EJS templates, an
 ## Project Structure
 
 ```
-conference-website/
+cicero-brukerforum/
 ├── public/
 │   ├── css/
 │   │   └── style.css
 │   ├── js/
 │   │   └── main.js
 │   └── images/
+│       ├── ingerstenersen.png
+│       ├── eliseconradi.png
+│       └── deichman_bjorvika.jpg
 ├── views/
 │   ├── partials/
 │   │   ├── header.ejs
@@ -109,63 +110,41 @@ The website uses CSS variables for easy customization. The primary colors and st
 }
 ```
 
-### Adding Pages
+### Schedule Display
 
-To add a new page:
+The schedule is displayed with an interactive interface that:
+- Shows tabs for each conference day
+- Lists events with time, title, speaker, and location
+- Allows users to click on events to reveal additional details
+- Uses Font Awesome icons for visual enhancements
 
-1. Create a new EJS file in the `views` directory
-2. Add a route for the new page in `app.js`
-3. Add a link in the navigation menu (in `views/partials/header.ejs`)
+To modify the schedule:
+1. Update the schedule data in `app.js`
+2. Each event can include the following properties:
+   - `time`: The event's time slot
+   - `title`: The event's title
+   - `speaker`: (Optional) The presenter's name
+   - `location`: The venue/room
+   - `description`: Detailed information about the event
 
-## Adding Functionality
+## Special Features
 
-### Backend for Contact Form
+### Registration Notice
 
-The contact form currently only performs client-side validation. To make it actually send emails:
+The "Påmelding" (Registration) button on the homepage displays an alert informing users that registration is closed:
+```javascript
+function showRegistrationAlert(event) {
+  event.preventDefault();
+  alert("Påmeldingsfristen er nå ute, og brukermøtet er fulltegnet");
+}
+```
 
-1. Install nodemailer:
-   ```bash
-   npm install nodemailer
-   ```
+### Font Awesome Integration
 
-2. Create a POST route in `app.js`:
-   ```javascript
-   const nodemailer = require('nodemailer');
-
-   // Create a transporter
-   const transporter = nodemailer.createTransport({
-     // Add your email service configuration
-   });
-
-   // Route for form submission
-   app.post('/contact', (req, res) => {
-     const { name, email, subject, message } = req.body;
-     
-     // Send email logic
-     transporter.sendMail({
-       from: email,
-       to: 'your-email@example.com',
-       subject: subject || `Message from ${name}`,
-       text: message
-     }, (error, info) => {
-       if (error) {
-         return res.status(500).send('Error sending message');
-       }
-       res.status(200).send('Message sent successfully');
-     });
-   });
-   ```
-
-3. Update the form in `views/contact.ejs` to submit to '/contact'
-
-### Registration System
-
-To add a registration system:
-
-1. Create a registration form and page
-2. Set up database integration (MongoDB, PostgreSQL, etc.)
-3. Create routes for registration handling
-4. Add user authentication if needed
+The website uses Font Awesome icons for enhanced visual elements:
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+```
 
 ## Deployment
 
@@ -222,15 +201,8 @@ To add a registration system:
 - [Express.js](https://expressjs.com/) - Web framework
 - [EJS](https://ejs.co/) - Templating engine
 - [Nodemon](https://nodemon.io/) - Development utility for auto-restarting
+- [Font Awesome](https://fontawesome.com/) - Icon library
 
 ## License
 
 MIT License
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Support
-
-If you have any questions or need help, please open an issue or contact us at info@conference2025.com.
