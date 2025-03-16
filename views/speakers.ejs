@@ -1,0 +1,29 @@
+
+<%- include('partials/header') %>
+
+<section class="page-header">
+  <div class="container">
+    <h2>Foredragsholdere</h2>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <div class="speakers-grid">
+      <% speakers.forEach(speaker => { %>
+        <div class="speaker-card">
+          <div class="speaker-photo">
+            <img src="<%= speaker.photo %>" alt="<%= speaker.name %>">
+          </div>
+          <div class="speaker-info">
+            <h3><%= speaker.name %></h3>
+            <p class="speaker-title"><%= speaker.title %></p>
+            <p class="speaker-bio"><%= speaker.bio %></p>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

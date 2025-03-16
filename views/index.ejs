@@ -1,0 +1,66 @@
+<%- include('partials/header') %>
+
+<section class="hero">
+  <div class="container">
+    <h2>Velkommen til Cicero brukerforum 2025</h2>
+    <p class="subtitle">24.-25. mars 2025 • Deichman Brjørvika, Oslo</p>
+    <p>Vi ønsker alle Cicero-bibliotek i Norge velkommen til brukerforum på Deichman Bjørvika.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn primary" onclick="showRegistrationAlert(event)">Påmelding</a>
+      <a href="/schedule" class="btn secondary">Se programmet</a>
+    </div>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="container">
+    <h2>Hva inneholder konferansen?</h2>
+    <div class="highlight-cards">
+      <div class="card">
+        <div class="card-icon">🎤</div>
+        <h3>Foredrag</h3>
+        <p>Få vite mer om både Cicero og bibliotekutvikling generelt</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Tips og triks</h3>
+        <p>Lær nyttige tips for god bruk av Cicero i hverdagen, både for folkebibliotek og skolebibliotek.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Nettverk</h3>
+        <p>Møt og snakk med andre bibliotekarer som har Cicero</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-speakers">
+  <div class="container">
+    <h2>Fremhevede foredragsholdere</h2>
+    <div class="speaker-preview">
+      <div class="speaker">
+        <img src="/images/ingerstenersen.png" alt="Inger Stenersen">
+        <h3>Inger Stenersen</h3>
+        <p>Nasjonalt lånerregister og bibliotekkortet</p>
+      </div>
+      <div class="speaker">
+        <img src="/images/eliseconradi.png" alt="Elise Conradi">
+        <h3>Elise Conradi</h3>
+        <p>Norsk metadatabrønn</p>
+      </div>
+    </div>
+    <div class="center-button">
+      <a href="/speakers" class="btn secondary">Se alle foredragsholdere</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  function showRegistrationAlert(event) {
+    event.preventDefault();
+    alert("Påmeldingsfristen er nå ute, og brukermøtet er fulltegnet");
+  }
+</script>
+
+<%- include('partials/footer') %>

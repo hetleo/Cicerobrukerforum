@@ -1,0 +1,98 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+  <div class="container">
+    <h2>Program</h2>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <div class="schedule-tabs">
+      <% schedule.forEach((day, index) => { %>
+        <button class="tab-button <%= index === 0 ? 'active' : '' %>" 
+                onclick="openTab(event, 'day<%= index + 1 %>')">
+          <%= day.day.split(' - ')[0] %>
+        </button>
+      <% }); %>
+    </div>
+
+    <% schedule.forEach((day, index) => { %>
+      <div id="day<%= index + 1 %>" class="tab-content <%= index === 0 ? 'active' : '' %>">
+        <h3><%= day.day %></h3>
+        <div class="schedule-timeline">
+          <% day.events.forEach((event, eventIndex) => { %>
+            <div class="schedule-item" onclick="toggleEventDetails('<%= index %>-<%= eventIndex %>')">
+              <div class="time"><%= event.time %></div>
+              <div class="event-details">
+                <div class="event-summary">
+                  <h4><%= event.title %></h4>
+                  <div class="event-meta">
+                    <% if (event.speaker) { %>
+                      <p class="speaker"><i class="fas fa-user"></i> <%= event.speaker %></p>
+                    <% } %>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> <%= event.location %></p>
+                  </div>
+                  <div class="toggle-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+                <div class="event-description" id="desc-<%= index %>-<%= eventIndex %>">
+                  <% if (event.description) { %>
+                    <p><%= event.description %></p>
+                  <% } else { %>
+                    <p>Ingen detaljert beskrivelse tilgjengelig.</p>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+          <% }); %>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</section>
+
+<script>
+  // Function to handle tab switching
+  function openTab(evt, tabName) {
+    var i, tabContent, tabButtons;
+    
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].classList.remove("active");
+    }
+    
+    // Remove "active" class from all tab buttons
+    tabButtons = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+      tabButtons[i].classList.remove("active");
+    }
+    
+    // Show the current tab and add "active" class to the button
+    document.getElementById(tabName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+  }
+  
+  // Function to toggle event description visibility
+function toggleEventDetails(eventId) {
+  const descElement = document.getElementById('desc-' + eventId);
+  const currentItem = descElement.closest('.schedule-item');
+  const toggleIcon = currentItem.querySelector('.toggle-icon i');
+  
+  // Toggle the expanded class on the parent schedule item
+  currentItem.classList.toggle('expanded');
+  
+  // Update the icon
+  if (currentItem.classList.contains('expanded')) {
+    toggleIcon.classList.remove('fa-chevron-down');
+    toggleIcon.classList.add('fa-chevron-up');
+  } else {
+    toggleIcon.classList.remove('fa-chevron-up');
+    toggleIcon.classList.add('fa-chevron-down');
+  }
+}
+</script>
+
+<%- include('partials/footer') %>

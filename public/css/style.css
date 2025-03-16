@@ -1,0 +1,771 @@
+/* public/css/style.css */
+
+/* Base Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #f5f5f5;
+    --dark-color: #333;
+    --text-color: #444;
+    --border-color: #ddd;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover, nav ul li a.active {
+    color: var(--primary-color);
+  }
+  
+  /* Main Content */
+  main {
+    min-height: calc(100vh - 136px);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('/api/placeholder/1200/600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  .primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .primary:hover {
+    background-color: #2980b9;
+  }
+  
+  .secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Highlights Section */
+  .highlights {
+    padding: 80px 0;
+  }
+  
+  .highlights h2, .featured-speakers h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+  }
+  
+  .highlight-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  /* Featured Speakers */
+  .featured-speakers {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 80px 0;
+  }
+  
+  .featured-speakers h2 {
+    color: white;
+  }
+  
+  .speaker-preview {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .speaker {
+    text-align: center;
+  }
+  
+  .speaker img {
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .center-button {
+    text-align: center;
+  }
+  
+  .featured-speakers .secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .featured-speakers .secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Page Header */
+  .page-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .page-header h2 {
+    font-size: 2rem;
+  }
+  
+  /* Content Sections */
+  .content {
+    padding: 60px 0;
+  }
+  
+  /* About Page */
+  .about-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .about-text h3 {
+    color: var(--secondary-color);
+    margin: 20px 0 10px;
+  }
+  
+  .about-text h3:first-child {
+    margin-top: 0;
+  }
+  
+  .about-image img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .organizers h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .committee-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .member {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Speakers Page */
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .speaker-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .speaker-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .speaker-info {
+    padding: 20px;
+  }
+  
+  .speaker-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+  }
+  
+  .speaker-title {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  /* Schedule Page */
+  .schedule-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  .tab-button.active, .tab-button:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .tab-content h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+  }
+  
+  .schedule-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .schedule-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .time {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  
+  .event-details {
+    padding: 15px 20px;
+  }
+  
+  .event-details h4 {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+  }
+  
+  .speaker {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location {
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+  
+  /* Contact Page */
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .contact-info h3, .contact-form h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    margin-top: 20px;
+  }
+  
+  .info-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form .btn {
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 0;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links a {
+    color: white;
+    margin-left: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      margin-top: 20px;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    .about-content, .contact-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .schedule-item {
+      grid-template-columns: 1fr;
+    }
+    
+    .speaker-preview {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    footer .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  }
+
+  /* General text styling */
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Schedule list styling */
+.schedule-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-list li {
+  padding: 0.3rem 0;
+}
+
+/* Price options styling */
+.price-options {
+  background-color: #f8f8f8;
+  border-left: 3px solid #0066cc;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.price-options p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-image {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+/* Control speaker image dimensions */
+.speaker img {
+  width: 100px;  /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* This maintains aspect ratio and covers the container */
+  border-radius: 50%; /* Optional: Makes the image circular */
+}
+
+/* Make the speaker cards more consistent */
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px; /* Fixed width for each speaker card */
+  margin: 0 1rem 2rem 1rem;
+}
+
+/* Improve the layout of the speaker section */
+.speaker-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .speaker {
+    width: 160px; /* Slightly smaller on mobile */
+  }
+  
+  .speaker img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+
+
+/* Schedule tabs styling */
+.schedule-tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-button:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-button.active {
+  border-bottom: 3px solid #0066cc;
+  font-weight: bold;
+}
+
+
+
+/* Enhanced Schedule Item Styles */
+
+/* Schedule item layout improvements */
+.schedule-item {
+  cursor: pointer;
+  position: relative;
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.schedule-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+/* Time column styling */
+.time {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Event details section */
+.event-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Event title styling */
+.event-summary h4 {
+  font-size: 1.1rem;
+  margin: 0 0 0.8rem 0;
+  color: var(--secondary-color);
+  padding-right: 1.5rem; /* Space for toggle icon */
+}
+
+/* Speaker and location styling */
+.event-summary {
+  position: relative;
+}
+
+.speaker, .location {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1.5rem 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.speaker {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.speaker i, .location i {
+  margin-right: 0.5rem;
+  color: inherit;
+  opacity: 0.8;
+  width: 1rem;
+  text-align: center;
+}
+
+/* Toggle icon styling */
+.toggle-icon {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.schedule-item:hover .toggle-icon {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.03);
+}
+
+.toggle-icon i {
+  transition: transform 0.3s ease;
+}
+
+.expanded .toggle-icon i {
+  transform: rotate(180deg);
+}
+
+/* Event description styling */
+.event-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  margin-top: 0;
+  border-top: 0 solid #eee;
+}
+
+.event-description p {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.schedule-item.expanded .event-description {
+  /* Use a very large value to ensure all content shows */
+  max-height: 1000px;
+  opacity: 1;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #eee;
+}
+
+/* Meta info layout */
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .schedule-item {
+    grid-template-columns: 1fr;
+  }
+  
+  .time {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .speaker, .location {
+    margin-bottom: 0.4rem;
+  }
+}
