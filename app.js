@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 // Initialize express app
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 // Set view engine
 app.set('view engine', 'ejs');
@@ -246,7 +246,7 @@ app.get('/contact', (req, res) => {
   });
 });
 
-// Start server
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+// Start serveren
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
