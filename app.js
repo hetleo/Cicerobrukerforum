@@ -40,12 +40,6 @@ app.get('/speakers', (req, res) => {
   // Sample speakers data
   const speakers = [
     {
-      name: 'Helle Lauridsen',
-      title: 'Senior product manager, Systematic',
-      bio: '',
-      photo: '/images/profil_kvinne.jpg'
-    },
-    {
       name: 'Merete Lie',
       title: 'Biblioteksjef, Deichman',
       bio: '',
