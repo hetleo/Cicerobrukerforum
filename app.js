@@ -49,7 +49,8 @@ app.get('/speakers', (req, res) => {
       name: 'Merete Lie',
       title: 'Biblioteksjef, Deichman',
       bio: '',
-      photo: '/images/meretelie.jpg'
+      photo: '/images/meretelie.jpg',
+      photoCredit: 'Fotograf: Agnete Brun'
     },
     {
       name: 'Reidun Brinchman',
@@ -207,7 +208,7 @@ app.get('/schedule', (req, res) => {
         { 
           time: '09:15 - 10:00', 
           title: 'Tips og triks - skolebibliotek del 1',
-          speaker: 'Hege Hatlevik', 
+          speaker: 'Hege Hatlevik, Trine Lise Hagen', 
           location: 'Kinoen',
           description: 'Parallellsesjon for skolebibliotek med fokus på bruk av Cicero.'
         },
@@ -221,7 +222,7 @@ app.get('/schedule', (req, res) => {
         { 
           time: '10:15 - 11:00', 
           title: 'Tips og triks - skolebibliotek del 2', 
-          speaker: 'Hege Hatlevik',
+          speaker: 'Hege Hatlevik, Trine Lise Hagen',
           location: 'Kinoen',
           description: 'Fortsettelse av parallellsesjon for skolebibliotek.'
         },
