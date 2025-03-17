@@ -94,7 +94,7 @@ app.get('/speakers', (req, res) => {
       title: 'Rådgiver, Rogaland fylkesbibliotek',
       bio: 'Leder prosjekt om felles Formidlingsløsning.',
       photo: '/images/bkf.jpg',
-      photoCredit: 'Fotograf: Privat'
+      photoCredit: 'Fotograf: Anne Lise Nordheim'
     },
     {
       name: 'Elise Conradi',
