@@ -43,37 +43,37 @@ app.get('/speakers', (req, res) => {
       name: 'Helle Lauridsen',
       title: 'Senior product manager, Systematic',
       bio: '',
-      photo: '/images/hellelauridsen.jpeg'
+      photo: '/images/profil_kvinne.jpg'
     },
     {
       name: 'Reidun Brinchman',
       title: 'Biblioteksjef, Froland bibliotek',
       bio: 'Som leder for det første norske biblioteket etter Deichman som tok i bruk Cicero har Reidun opparbeidet seg god kunnskap om Cicero.',
-      photo: '/images/reidunbrinchman.png'
+      photo: '/images/profil_kvinne.jpg'
     },
     {
       name: 'Inger Stenersen',
       title: 'Seniorrådgiver, Nasjonalbiblioteket',
       bio: '',
-      photo: '/images/ingerstenersen.png'
+      photo: '/images/profil_kvinne.jpg'
     },
     {
       name: 'Bjørn Kjetil Fredriksen',
       title: 'Rådgiver, Rogaland fylkesbibliotek',
       bio: 'Leder prosjek Felles Formidlingsløsning, som skal lede frem til en felles formidlingsløsning for norske bibliotek.',
-      photo: '/images/bkf.png'
+      photo: '/images/profil_mann.jpg'
     },
     {
       name: 'Elise Conradi',
       title: 'Produktleder, Biblioteksentralen',
       bio: 'Metadataekspert hos Biblioteksentralen.',
-      photo: '/images/eliseconradi.png'
+      photo: '/images/profil_kvinne.jpg'
     },
     {
       name: 'Liv Gulbrandsen',
       title: 'Forfatter og litteraturformidler',
       bio: '',
-      photo: '/images/livgulbrandsen.png'
+      photo: '/images/profil_kvinne.jpg'
     }
   ];
   
@@ -111,13 +111,14 @@ app.get('/schedule', (req, res) => {
         { 
           time: '12:00 - 12:15', 
           title: 'Velkommen', 
-          speaker: 'Annike Selmer', 
+          speaker: 'Merete Lie', 
           location: 'Deichman Bjørvika',
           description: 'Offisiell åpning av Cicero brukerforum 2025 med introduksjon til programmet og praktisk informasjon for de to dagene.'
         },
         { 
           time: '12:15 - 13:15', 
-          title: 'Cicero-nettverk Norge', 
+          title: 'Ciceronettverk Norge', 
+          speaker: 'Annike Selmer'
           location: 'Deichman Bjørvika',
           description: 'Presentasjon av status for Cicero-nettverket i Norge og fremtidig samarbeid mellom norske Cicero-bibliotek.'
         },
@@ -190,9 +191,9 @@ app.get('/schedule', (req, res) => {
         },
         { 
           time: '11:00 - 11:30', 
-          title: 'Cicero-nettverk Norge', 
+          title: 'Ciceronettverk Norge', 
           location: 'Deichmansalen',
-          description: 'Diskusjon om videre organisering av Cicero-nettverket i Norge.'
+          description: ''
         },
         { 
           time: '11:30 - 12:30', 
