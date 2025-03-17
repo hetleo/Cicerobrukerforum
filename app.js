@@ -92,8 +92,9 @@ app.get('/speakers', (req, res) => {
     {
       name: 'Bjørn Kjetil Fredriksen',
       title: 'Rådgiver, Rogaland fylkesbibliotek',
-      bio: 'Leder prosjekt Felles Formidlingsløsning, som skal lede frem til en felles formidlingsløsning for norske bibliotek.',
-      photo: '/images/profil_mann.jpg'
+      bio: 'Leder prosjekt om felles Formidlingsløsning.',
+      photo: '/images/bkf.jpg',
+      photoCredit: 'Fotograf: Privat'
     },
     {
       name: 'Elise Conradi',
@@ -120,7 +121,7 @@ app.get('/schedule', (req, res) => {
   // Sample schedule data
   const schedule = [
     {
-      day: 'Dag 1 - 24. mars 2025',
+      day: '24. mars 2025',
       events: [
         { 
           time: '09:00 - 10:00', 
@@ -190,7 +191,7 @@ app.get('/schedule', (req, res) => {
       ]
     },
     {
-      day: 'Dag 2 - 25. mars 2025',
+      day: '25. mars 2025',
       events: [
         { 
           time: '09:00 - 09:15', 
@@ -244,7 +245,7 @@ app.get('/schedule', (req, res) => {
           title: 'Felles formidlingsløsning', 
           speaker: 'Bjørn Kjetil Fredriksen', 
           location: 'Deichman Bjørvika',
-          description: 'Presentasjon av arbeidet med en felles formidlingsløsning for norskek bibliotek.'
+          description: 'Oppdatert status om Felles Formidlingsløsning, det nye nasjonale prosjektet for en felles nettsideløsning og app for bibliotekene.'
         },
         { 
           time: '13:00 - 13:45', 
