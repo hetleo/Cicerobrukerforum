@@ -85,7 +85,7 @@ app.get('/speakers', (req, res) => {
       name: 'Inger Stenersen',
       title: 'Seniorrådgiver, Nasjonalbiblioteket',
       bio: '',
-      photo: '/images/profil_kvinne.jpg'
+      photo: '/images/ingerstenersen.jpg'
     },
     {
       name: 'Bjørn Kjetil Fredriksen',
@@ -164,7 +164,7 @@ app.get('/schedule', (req, res) => {
           title: 'Nasjonalt lånerregister og bibliotekkortet', 
           speaker: 'Inger Stenersen', 
           location: 'Deichman Bjørvika',
-          description: 'En gjennomgang av det nasjonale lånerregisteret og bibliotekkortet.'
+          description: 'Nasjonalt lånerregister og Bibliotekkortet. En oppsummering av arbeidet så langt, og om hva dette betyr for bibliotekene. Hva er veien videre?'
         },
         { 
           time: '15:30 - 15:45', 
