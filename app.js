@@ -52,6 +52,18 @@ app.get('/speakers', (req, res) => {
       photo: '/images/profil_kvinne.jpg'
     },
     {
+      name: 'Hege Hatlevik',
+      title: 'Seniorrådgiver, Nasjonalbiblioteket',
+      bio: 'Funksjonell systemansvarlig i Osloskolen',
+      photo: '/images/hegehatlevik.jpg'
+    },
+    {
+      name: 'Annike Selmer',
+      title: 'Leder for seksjon Publikum i Bjørvika og systemeier for Cicero',
+      bio: '',
+      photo: '/images/Annike.jpg'
+    },
+    {
       name: 'Inger Stenersen',
       title: 'Seniorrådgiver, Nasjonalbiblioteket',
       bio: '',
@@ -92,7 +104,7 @@ app.get('/schedule', (req, res) => {
       events: [
         { 
           time: '09:00 - 10:00', 
-          title: 'Omvisning på Tøyen bibliotek', 
+          title: 'Omvisning på Tøyen bibliotek (for påmeldte)', 
           location: 'Deichman Tøyen',
           description: 'Bli med på en guidet omvisning av Tøyen bibliotek, inkludert Biblo Tøyen – et bibliotek designet for barn og unge mellom 10 og 15 år.'
         },
@@ -168,24 +180,28 @@ app.get('/schedule', (req, res) => {
         { 
           time: '09:15 - 10:00', 
           title: 'Tips og triks - folkebibliotek del 1', 
+          speaker: 'Reidun Brinchman',
           location: 'Deichmansalen',
           description: 'Praktiske tips og triks for optimal bruk av Cicero i folkebibliotek.'
         },
         { 
           time: '09:15 - 10:00', 
-          title: 'Tips og triks - skolebibliotek del 1', 
+          title: 'Tips og triks - skolebibliotek del 1',
+          speaker: 'Hege Hatlevik', 
           location: 'Kinoen',
           description: 'Parallellsesjon for skolebibliotek med fokus på bruk av Cicero.'
         },
         { 
           time: '10:15 - 11:00', 
           title: 'Tips og triks - folkebibliotek del 2', 
+          speaker: 'Reidun Brinchman',
           location: 'Deichmansalen',
           description: 'Fortsettelse av tips og triks for folkebibliotek.'
         },
         { 
           time: '10:15 - 11:00', 
           title: 'Tips og triks - skolebibliotek del 2', 
+          speaker: 'Hege Hatlevik',
           location: 'Kinoen',
           description: 'Fortsettelse av parallellsesjon for skolebibliotek.'
         },
