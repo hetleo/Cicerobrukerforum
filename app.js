@@ -46,6 +46,12 @@ app.get('/speakers', (req, res) => {
       photo: '/images/profil_kvinne.jpg'
     },
     {
+      name: 'Merete Lie',
+      title: 'Biblioteksjef, Deichman',
+      bio: '',
+      photo: '/images/meretelie.jpg'
+    },
+    {
       name: 'Reidun Brinchman',
       title: 'Biblioteksjef, Froland bibliotek',
       bio: 'Som leder for det første norske biblioteket etter Deichman som tok i bruk Cicero har Reidun opparbeidet seg god kunnskap om Cicero.',
@@ -58,8 +64,20 @@ app.get('/speakers', (req, res) => {
       photo: '/images/hegehatlevik.jpg'
     },
     {
+      name: 'Silje Elinesdatter Grimseid',
+      title: 'Systemforvalter, Deichman',
+      bio: '',
+      photo: '/images/siljegrimseid.jpg'
+    },
+    {
+      name: 'Marie Johansen',
+      title: 'Fagansvarlig service, Deichman Bjørvika',
+      bio: '',
+      photo: '/images/profil_kvinne.jpg'
+    },
+    {
       name: 'Annike Selmer',
-      title: 'Leder for seksjon Publikum i Bjørvika og systemeier for Cicero',
+      title: 'Leder for seksjon Publikum i Deichman Bjørvika, og systemeier for Cicero',
       bio: '',
       photo: '/images/Annike.jpg'
     },
@@ -72,7 +90,7 @@ app.get('/speakers', (req, res) => {
     {
       name: 'Bjørn Kjetil Fredriksen',
       title: 'Rådgiver, Rogaland fylkesbibliotek',
-      bio: 'Leder prosjek Felles Formidlingsløsning, som skal lede frem til en felles formidlingsløsning for norske bibliotek.',
+      bio: 'Leder prosjekt Felles Formidlingsløsning, som skal lede frem til en felles formidlingsløsning for norske bibliotek.',
       photo: '/images/profil_mann.jpg'
     },
     {
@@ -132,14 +150,14 @@ app.get('/schedule', (req, res) => {
           title: 'Ciceronettverk Norge', 
           speaker: 'Annike Selmer',
           location: 'Deichman Bjørvika',
-          description: 'Presentasjon av status for Cicero-nettverket i Norge og fremtidig samarbeid mellom norske Cicero-bibliotek.'
+          description: 'Presentasjon av Cicero-nettverket i Norge og fremtidig samarbeid mellom norske Cicero-bibliotek.'
         },
         { 
           time: '13:30 - 15:00', 
           title: 'Systematic', 
           speaker: 'Helle Lauridsen', 
           location: 'Deichman Bjørvika',
-          description: 'Oppdatering fra Systematic om de siste forbedringene i Cicero og planer for fremtidige funksjoner og versjoner av systemet.'
+          description: ''
         },
         { 
           time: '15:00 - 15:30', 
@@ -157,6 +175,7 @@ app.get('/schedule', (req, res) => {
         { 
           time: '16:00 - 16:30', 
           title: 'Omvisning Deichman Bjørvika (for påmeldte)', 
+          speaker: 'Annike Selmer',
           location: 'Deichman Bjørvika',
           description: 'En omvisning i hovedbiblioteket i Oslo.'
         },
@@ -180,7 +199,7 @@ app.get('/schedule', (req, res) => {
         { 
           time: '09:15 - 10:00', 
           title: 'Tips og triks - folkebibliotek del 1', 
-          speaker: 'Reidun Brinchman',
+          speaker: 'Silje Grimseid, Marie Johansen',
           location: 'Deichmansalen',
           description: 'Praktiske tips og triks for optimal bruk av Cicero i folkebibliotek.'
         },
@@ -208,6 +227,7 @@ app.get('/schedule', (req, res) => {
         { 
           time: '11:00 - 11:30', 
           title: 'Ciceronettverk Norge', 
+          speaker: 'Annike Selmer',
           location: 'Deichmansalen',
           description: ''
         },
