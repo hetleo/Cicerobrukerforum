@@ -1,4 +1,3 @@
-
 <%- include('partials/header') %>
 
 <section class="page-header">
@@ -14,6 +13,9 @@
         <div class="speaker-card">
           <div class="speaker-photo">
             <img src="<%= speaker.photo %>" alt="<%= speaker.name %>">
+            <% if (speaker.photoCredit) { %>
+              <div class="photo-credit"><%= speaker.photoCredit %></div>
+            <% } %>
           </div>
           <div class="speaker-info">
             <h3><%= speaker.name %></h3>

@@ -85,7 +85,8 @@ app.get('/speakers', (req, res) => {
       name: 'Inger Stenersen',
       title: 'Seniorrådgiver, Nasjonalbiblioteket',
       bio: '',
-      photo: '/images/ingerstenersen.jpg'
+      photo: '/images/ingerstenersen.jpg',
+      photoCredit: 'Fotograf: Kari Margrethe Sabro'
     },
     {
       name: 'Bjørn Kjetil Fredriksen',

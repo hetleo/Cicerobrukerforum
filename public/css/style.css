@@ -769,3 +769,31 @@
     margin-bottom: 0.4rem;
   }
 }
+
+
+.speaker-photo {
+  position: relative;
+  /* Keep any existing styling you have for this element */
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 3px 6px;
+  font-size: 0.7rem;
+  border-radius: 3px 0 0 0;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Optional hover effect for better readability when text is long */
+.photo-credit:hover {
+  max-width: none;
+  white-space: normal;
+  z-index: 10;
+}
