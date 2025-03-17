@@ -118,7 +118,7 @@ app.get('/schedule', (req, res) => {
         { 
           time: '12:15 - 13:15', 
           title: 'Ciceronettverk Norge', 
-          speaker: 'Annike Selmer'
+          speaker: 'Annike Selmer',
           location: 'Deichman Bjørvika',
           description: 'Presentasjon av status for Cicero-nettverket i Norge og fremtidig samarbeid mellom norske Cicero-bibliotek.'
         },
