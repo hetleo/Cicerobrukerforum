@@ -154,7 +154,7 @@ app.get('/schedule', (req, res) => {
           title: 'Systematic', 
           speaker: '', 
           location: 'Deichman Bjørvika',
-          description: 'Systematic gir informsjon om status på Cicero implementering i Norge Status og øvrige land (Danmark, Sverige og Tyskland).'
+          description: 'Systematic gir informasjon om status på Cicero implementering i Norge og øvrige land (Danmark, Sverige og Tyskland).'
         },
         { 
           time: '15:00 - 15:30', 
