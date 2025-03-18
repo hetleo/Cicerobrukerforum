@@ -47,6 +47,24 @@ app.get('/speakers', (req, res) => {
       photoCredit: 'Fotograf: Agnete Brun'
     },
     {
+      name: 'Jakob Ilum Damsgaard',
+      title: 'Business Development Director, Systematic',
+      bio: '',
+      photo: '/images/profile_mann.jpg'
+    },
+    {
+      name: 'Jesper Hansen',
+      title: 'Senior Project Manager, Systematic',
+      bio: '',
+      photo: '/images/profile_mann.jpg'
+    },
+    {
+      name: 'Jonas Magnusson',
+      title: 'Senior Business Development Manager Nordics, Systematic',
+      bio: '',
+      photo: '/images/profile_mann.jpg'
+    },
+    {
       name: 'Reidun Brinchman',
       title: 'Biblioteksjef, Froland bibliotek',
       bio: 'Som leder for det første norske biblioteket etter Deichman som tok i bruk Cicero har Reidun opparbeidet seg god kunnskap om Cicero.',
