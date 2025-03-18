@@ -152,9 +152,9 @@ app.get('/schedule', (req, res) => {
         { 
           time: '13:30 - 15:00', 
           title: 'Systematic', 
-          speaker: 'Helle Lauridsen', 
+          speaker: '', 
           location: 'Deichman Bjørvika',
-          description: ''
+          description: 'Systematic gir informsjon om status på Cicero implementering i Norge Status og øvrige land (Danmark, Sverige og Tyskland).'
         },
         { 
           time: '15:00 - 15:30', 
@@ -251,9 +251,9 @@ app.get('/schedule', (req, res) => {
         { 
           time: '14:00 - 14:30', 
           title: 'Systematic', 
-          speaker: 'Helle Lauridsen', 
+          speaker: '', 
           location: 'Deichman Bjørvika',
-          description: 'Oppdatering fra Systematic om kommende funksjoner.'
+          description: 'Systematic gir en status på utvikling av Cicero. Det blir også tips til å komme godt i gang med Cicero, samt en demonstration af systemet.'
         },
         { 
           time: '14:30 - 15:00', 
