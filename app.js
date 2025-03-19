@@ -198,8 +198,8 @@ app.get('/schedule', (req, res) => {
         { 
           time: '19:00 - 21:00', 
           title: 'Middag (for påmeldte)', 
-          location: 'Café Centropa',
-          description: 'Felles middag med god mat og drikke.'
+          location: 'Centropa',
+          description: 'Felles middag på Centropa i Deichman bibliotek. Her serveres spennende retter inspirert av europeisk matkultur i en moderne setting.<br><br><a href="https://www.centropa.no" target="_blank">Besøk restaurantens nettside</a>'
         }
       ]
     },
