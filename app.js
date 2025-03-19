@@ -24,14 +24,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
   res.render('index', { 
-    title: 'Conference 2025',
+    title: 'Cicero brukerforum 2025',
     page: 'home'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about', { 
-    title: 'About | Conference 2025',
+    title: 'Om konferansen | brukerforum 2025',
     page: 'about' 
   });
 });
