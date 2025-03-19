@@ -68,7 +68,8 @@ app.get('/speakers', (req, res) => {
       name: 'Reidun Brinchman',
       title: 'Biblioteksjef, Froland bibliotek',
       bio: 'Som leder for det første norske biblioteket etter Deichman som tok i bruk Cicero har Reidun opparbeidet seg god kunnskap om Cicero.',
-      photo: '/images/profil_kvinne.jpg'
+      photo: '/images/reidun.jpg',
+      photoCredit: 'Fotograf: privat'
     },
     {
       name: 'Hege Hatlevik',
