@@ -125,7 +125,7 @@ app.get('/speakers', (req, res) => {
     },
     {
       name: 'Jonas Svartberg Arntzen',
-      title: 'Avdelingsleder tjenesteutvikling',
+      title: 'Avdelingsleder for tjenesteutvikling, Biblioteksentralen',
       bio: '',
       photo: '/images/jonas.jpg',
       photoCredit: 'Foto: Biblioteksentralen'
