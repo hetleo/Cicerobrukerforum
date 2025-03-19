@@ -44,7 +44,7 @@ app.get('/speakers', (req, res) => {
       title: 'Biblioteksjef, Deichman',
       bio: '',
       photo: '/images/meretelie.jpg',
-      photoCredit: 'Fotograf: Agnete Brun'
+      photoCredit: 'Foto: Agnete Brun'
     },
     {
       name: 'Jakob Ilum Damsgaard',
@@ -69,7 +69,7 @@ app.get('/speakers', (req, res) => {
       title: 'Biblioteksjef, Froland bibliotek',
       bio: 'Som leder for det første norske biblioteket etter Deichman som tok i bruk Cicero har Reidun opparbeidet seg god kunnskap om Cicero.',
       photo: '/images/reidun.jpg',
-      photoCredit: 'Fotograf: privat'
+      photoCredit: 'Foto: privat'
     },
     {
       name: 'Hege Hatlevik',
@@ -100,20 +100,35 @@ app.get('/speakers', (req, res) => {
       title: 'Seniorrådgiver, Nasjonalbiblioteket',
       bio: '',
       photo: '/images/ingerstenersen.jpg',
-      photoCredit: 'Fotograf: Kari Margrethe Sabro'
+      photoCredit: 'Foto: Kari Margrethe Sabro'
     },
     {
       name: 'Bjørn Kjetil Fredriksen',
       title: 'Rådgiver, Rogaland fylkesbibliotek',
       bio: 'Leder prosjekt om felles Formidlingsløsning.',
       photo: '/images/bkf.jpg',
-      photoCredit: 'Fotograf: Anne Lise Nordheim'
+      photoCredit: 'Foto: Anne Lise Nordheim'
     },
     {
       name: 'Elise Conradi',
       title: 'Produktleder, Biblioteksentralen',
       bio: 'Metadataekspert hos Biblioteksentralen.',
-      photo: '/images/profil_kvinne.jpg'
+      photo: '/images/elise.jpg',
+      photoCredit: 'Foto: Biblioteksentralen'
+    },
+    {
+      name: 'Inger Nygård',
+      title: 'Produktleder, Biblioteksentralen',
+      bio: '',
+      photo: '/images/inger.jpg',
+      photoCredit: 'Foto: Biblioteksentralen'
+    },
+    {
+      name: 'Jonas Svartberg Arntzen',
+      title: 'Avdelingsleder tjenesteutvikling',
+      bio: '',
+      photo: '/images/jonas.jpg',
+      photoCredit: 'Foto: Biblioteksentralen'
     },
     {
       name: 'Liv Gulbrandsen',
@@ -263,9 +278,9 @@ app.get('/schedule', (req, res) => {
         { 
           time: '13:00 - 13:45', 
           title: 'Nasjonal metadatabrønn', 
-          speaker: 'Elise Conradi', 
+          speaker: 'Elise Conradi, Inger Nygård, Jonas Svartberg Arntzen', 
           location: 'Deichman Bjørvika',
-          description: 'Gjennomgang av den kommende nasjonale metadatabrønnen.'
+          description: 'Avtalen med Nasjonalbiblioteket er klar: Biblioteksentralen skal levere den nasjonale Metadatabrønnen. Hør mer om hvordan det påvirker biblioteket ditt.'
         },
         { 
           time: '14:00 - 14:30', 
