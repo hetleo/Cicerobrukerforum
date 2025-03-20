@@ -230,9 +230,9 @@ app.get('/schedule', (req, res) => {
         { 
           time: '09:15 - 10:00', 
           title: 'Tips og triks - folkebibliotek del 1', 
-          speaker: 'Silje Grimseid, Marie Johansen',
+          speaker: 'Marie Johansen, Camilla Wiig, Asgeir Rekkavik og Silje Grimseid',
           location: 'Deichmansalen',
-          description: 'Praktiske tips og triks for optimal bruk av Cicero i folkebibliotek.'
+          description: 'Praktiske tips og triks bruk av Cicero i folkebibliotek.'
         },
         { 
           time: '09:15 - 10:00', 
