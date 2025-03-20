@@ -188,7 +188,7 @@ app.get('/schedule', (req, res) => {
           title: 'Systematic', 
           speaker: '', 
           location: 'Deichman Bjørvika',
-          description: 'Systematic gir informasjon om status på Cicero implementering i Norge og øvrige land (Danmark, Sverige og Tyskland).'
+          description: 'Systematic presenterer hvem de er, og hva som er status på implementeringen av Cicero i Norge. Presentasjonen inkluderer veiledning for hvordan man kommer godt i gang med systemet, samt en demonstrasjon av Cicero. Avslutningsvis vil Systematic gi en orientering om implementerte og planlagte utvidelser til plattformen.'
         },
         { 
           time: '15:00 - 15:30', 
@@ -287,7 +287,7 @@ app.get('/schedule', (req, res) => {
           title: 'Systematic', 
           speaker: '', 
           location: 'Deichman Bjørvika',
-          description: 'Systematic gir en status på utvikling av Cicero. Det blir også tips til å komme godt i gang med Cicero, samt en demonstration af systemet.'
+          description: 'Systematic gir en status for Cicero i øvrige land (Danmark, Sverige og Tyskland)'
         },
         { 
           time: '14:30 - 15:00', 
