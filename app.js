@@ -73,8 +73,8 @@ app.get('/speakers', (req, res) => {
     },
     {
       name: 'Hege Hatlevik',
-      title: 'Seniorrådgiver, Nasjonalbiblioteket',
-      bio: 'Funksjonell systemansvarlig i Osloskolen',
+      title: 'Funksjonell systemansvarlig for Cicero i Osloskolen',
+      bio: '',
       photo: '/images/hegehatlevik.jpg'
     },
     {
