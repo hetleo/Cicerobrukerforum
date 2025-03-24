@@ -50,7 +50,8 @@ app.get('/speakers', (req, res) => {
       name: 'Jakob Ilum Damsgaard',
       title: 'Business Development Director, Systematic',
       bio: '',
-      photo: '/images/profil_mann.jpg'
+      photo: '/images/jakob.jpg',
+      photoCredit: 'Foto: Systematic'
     },
     {
       name: 'Jesper Hansen',
