@@ -114,7 +114,7 @@ app.get('/speakers', (req, res) => {
       name: 'Elise Conradi',
       title: 'Produktleder, Biblioteksentralen',
       bio: 'Metadataekspert hos Biblioteksentralen.',
-      photo: '/images/elise.jpg',
+      photo: '/images/eliseconradi.png',
       photoCredit: 'Foto: Biblioteksentralen'
     },
     {
